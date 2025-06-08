@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>占卜結果</title></head>
+<body>
+    <h1>塔羅占卜結果</h1>
+    <p><strong>問題：</strong>{{ question }}</p>
+    <p><strong>問題類型：</strong>{{ topic }}</p>
+    <p><strong>牌陣：</strong>{{ spread_name }}</p>
+    <hr>
+    {% for card in results %}
+        <h2>{{ card.name }}（{{ card.position }}）</h2>
+        <p><strong>整體意義：</strong>{{ card.meaning }}</p>
+        <p><strong>{{ topic }}提示：</strong>{{ card.topic_meaning }}</p>
+        <p>{{ card.keywords }}</p>
+        <hr>
+    {% endfor %}
+    <h3>▸ 結論解析：</h3>
+    <p>{{ summary }}</p>
+    <br><a href="/">返回首頁</a>
+</body>
+</html>

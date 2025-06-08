@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>塔羅占卜</title></head>
+<body>
+    <h1>塔羅占卜系統</h1>
+    <form method="POST">
+        <label>請選擇問題類型：</label><br>
+        <select name="topic">
+            <option value="愛情">愛情</option>
+            <option value="工作">工作</option>
+            <option value="金錢">金錢</option>
+            <option value="心靈">心靈</option>
+        </select><br><br>
+
+        <label>請選擇牌陣：</label><br>
+        <select name="spread">
+            <option value="1">單張牌</option>
+            <option value="2">三張牌</option>
+            <option value="3">十字牌陣</option>
+            <option value="4">關係牌陣</option>
+            <option value="5">事業發展牌陣</option>
+        </select><br><br>
+
+        <label>請輸入你的問題：</label><br>
+        <input type="text" name="question" required><br><br>
+
+        <button type="submit">開始占卜</button>
+    </form>
+</body>
+</html>
